@@ -1,0 +1,37 @@
+.classMainWrapper {
+  position: fixed;
+  /* z-index: 1; */
+  background-color: white;
+  width: '100%';
+  margin-bottom:9%
+}
+
+.menutitle {
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+    margin-top: -5px;
+}
+
+  .hideItems{
+    display: none;
+  }
+  @media screen and (max-width: 900px) { 
+    .displayItems{
+      display: none;
+      cursor: pointer;
+    }
+    .hideItems{
+      display: flex;
+      justify-content:space-between;
+    }
+  }
+
+.signupbutton {
+    background-color: blue;
+    border-radius: '5px';
+}
