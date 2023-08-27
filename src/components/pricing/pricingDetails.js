@@ -15,29 +15,29 @@ const PricingDetails = (props) => {
         <>
             <div style={{ margin: '15px', padding: '10px' }}>
                 <div className="price">
-                    {props.price}
+                    {props?.item?.price}
                 </div>
                 <div className="plan">
-                    {props.plan}
+                    {props?.item?.plan}
                 </div>
                 <div className="billing-type">
-                    {props.billingType}
+                    {props?.item?.billingType}
                 </div>
                 <div >
                     <div className="display-flex"  >
-                     <div>{checkIcon}</div>{props.feature1}
+                     <div>{checkIcon}</div>{props?.item?.features?.feature1}
                     </div>
                     <div className="display-flex">
-                    {checkIcon}{props.feature2}
+                    {checkIcon}{props?.item?.features?.feature2}
                     </div>
                     <div className="display-flex">
-                    {checkIcon}{props.feature3}
+                    {checkIcon}{props?.item?.features?.feature3}
                     </div>
                     <div className="display-flex">
-                    {checkIcon}{props.feature4}
+                    {checkIcon}{props?.item?.features?.feature4}
                     </div>
                     <div className="display-flex">
-                    {checkIcon}{props.feature5}
+                    {checkIcon}{props?.item?.features?.feature5}
                     </div>
                 </div>
                 <Button variant="contained" sx={style}>GET STARTED</Button>

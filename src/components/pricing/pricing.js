@@ -1,7 +1,7 @@
 import { Card, Grid } from "@mui/material";
 import React from "react";
 import PricingDetails from "./pricingDetails";
-import { PricingData } from "../../constants/pricingDetails";
+import { PricingData } from "../../data/constants/pricingDetails";
 import './pricing.css'
 
 const Pricing = () => {
@@ -22,17 +22,10 @@ const Pricing = () => {
                     {
                         PricingData.map((item) => (
                             <Grid item xs={12} sm={5.85} md={3.8} lg={3.7} paddingTop={3}>
-                                <Card variant="outlined" style={{ borderRadius: '10px', border: '2px solid blue' }}>
+                                <Card variant="outlined" className="gradient">
                                     {/* package format starts here */}
                                     <PricingDetails
-                                        price={item.price}
-                                        plan={item.plan}
-                                        billingType={item.billingType}
-                                        feature1={item.features.feature1}
-                                        feature2={item.features.feature2}
-                                        feature3={item.features.feature3}
-                                        feature4={item.features.feature4}
-                                        feature5={item.features.feature5}
+                                       item={item}
                                     />
                                     {/* package format ends here */}
                                 </Card>

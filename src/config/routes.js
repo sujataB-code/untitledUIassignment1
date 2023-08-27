@@ -1,10 +1,9 @@
 
-import './App.css';
-import Header from './components/header';
-import Pricing from './components/pricing/pricing';
+import Header from '../components/header/header';
+import Pricing from '../components/pricing/pricing';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
-function App() {
+function MainRoute() {
   return (
     <>
     <BrowserRouter>
@@ -17,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainRoute;

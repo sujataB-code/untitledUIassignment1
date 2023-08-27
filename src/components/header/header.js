@@ -1,9 +1,9 @@
-import { Box, Button, Container, Grid } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 import React, { useState } from "react";
 import { FaBars } from 'react-icons/fa';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import './header.css';
-import logo from '../images/logo.png';
+import logo from '../../assets/images/logo.png';
 import { Link } from "react-router-dom";
 
 const menuItems = [
@@ -63,14 +63,13 @@ const Header = () => {
                         <Grid container justifyContent="center" alignItems="center" padding={3}>
                             <Grid item container xs={10} sm={3} md={2} lg={1.3} justifyContent="center" alignItems="center">
                                 <Grid item>
-                                    <img src={logo} />
+                                    <img alt="" src={logo} />
                                 </Grid>
                                 <Grid item alignItems="center">
                                     <div className="font-weight-700">
                                         Untitled UI
                                     </div>
                                 </Grid>
-
                             </Grid>
                             <Grid item container justifyContent="start" sm={7} md={6} >
                                 {menuItems.map((menu) => (
@@ -87,7 +86,7 @@ const Header = () => {
                             </Grid>
                             <Grid item container justifyContent="end" sm={2} md={3}>
                                 <Grid item xs={12} sm={2} md={5}>
-                                    <Button sx={LoginStyle}><div className="font-weight-700">Login</div></Button>
+                                    <Button className="button-property" color="primary" sx={LoginStyle}><div className="font-weight-700">Login</div></Button>
                                 </Grid>
                                 <Grid item xs={20} sm={2} md={5} lg={4}>
                                     <Button variant="contained" sx={style}>Sign Up</Button>
@@ -103,7 +102,7 @@ const Header = () => {
                             <Grid item container xs={5} sm={3} md={3}
                                 justifyContent="center" alignItems="center">
                                 <Grid item>
-                                    <img src={logo} />
+                                    <img alt="" src={logo} />
                                 </Grid>
                                 <Grid item alignItems="center">
                                     <div className="font-weight-700">
