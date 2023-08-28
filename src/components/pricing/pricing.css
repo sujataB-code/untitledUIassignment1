@@ -2,6 +2,7 @@
     padding-left: 9%;
     padding-right: 9%;
     padding-top: 110px;
+    padding-bottom: 9%;
     box-sizing: border-box;
 }
 
@@ -12,8 +13,7 @@
 }
 
 .gradient {
-    border-radius: 10px;
-    border: '2px solid blue';
+    border:3px solid blue;
 }
 
 .gradient:hover {
@@ -47,6 +47,10 @@
     padding-top: 5px;
     padding-bottom: 20px;
     text-align: center;
+}
+
+.features{
+    height: 160px;
 }
 
 .display-flex {

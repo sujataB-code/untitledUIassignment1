@@ -21,6 +21,16 @@
   display: none;
 }
 
+.header-link{
+  text-decoration: none;
+  width:95%
+}
+
+.header-link-mini{
+  text-decoration: none;
+  width:120px
+}
+
 .menutitle {
   padding-top:5px;
   padding-bottom: 5px;
@@ -28,6 +38,7 @@
   padding-right: 10px;
   border-radius: 7px;
   display: flex;
+  justify-content: center;
   align-items: center;
   transition-property: background-color color;
   transition-duration: 2s;

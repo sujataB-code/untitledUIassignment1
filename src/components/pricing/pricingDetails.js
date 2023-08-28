@@ -23,7 +23,7 @@ const PricingDetails = (props) => {
                 <div className="billing-type">
                     {props?.item?.billingType}
                 </div>
-                <div >
+                <div className="features">
                     <div className="display-flex"  >
                      <div>{checkIcon}</div>{props?.item?.features?.feature1}
                     </div>

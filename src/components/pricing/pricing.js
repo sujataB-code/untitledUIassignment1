@@ -21,8 +21,8 @@ const Pricing = () => {
                 <Grid container justifyContent="space-between" marginTop={4}>
                     {
                         PricingData.map((item) => (
-                            <Grid item xs={12} sm={5.85} md={3.8} lg={3.7} paddingTop={3}>
-                                <Card variant="outlined" className="gradient">
+                            <Grid key={item.id} item xs={12} sm={5.85} md={3.8} lg={3.5} paddingTop={3}>
+                                <Card className="gradient" style={{borderRadius:'15px',height:'430px'}} >
                                     {/* package format starts here */}
                                     <PricingDetails
                                        item={item}
